@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Exercise ( 3.1-3.5)</h1>
+    <h1>Self-check quiz</h1>
+<p>1. Can you use const and update values within an array?</p>
+<p>A1. Yes u can use the keywords const update values within an array. </p>
+
+
+<p>2. Which property in an array gives the number of items contained in the array?</p>
+<p>A2. the property in an array gives the number of items contained in the array is <b>array.length </b>
+<br>
+let myarray = [1,2,3,4,5];<br>
+console.log(myarray.length);</p>
+
+
+<p>3. What is the output in the console?</p>
+
+
+const myArr1 = [1,3,5,6,8,9,15];
+console.log(myArr1.indexOf(0));
+console.log(myArr1.indexOf(3));</p>
+<p>A3. -1 <br>
+    1
+ </p>
+
+
+
+<p>4. How do you replace the second element in an array myArr =
+[1,3,5,6,8,9,15] with the value 4?
+</p>
+<p>A4. const myArr = [1, 3, 5, 6, 8, 9, 15];<br>
+    myArr[1] = 4;<br>
+    
+    console.log(myArr);
+     </p>
+
+
+<p>5. What is the output in the console?
+const myArr2 = [];
+myArr2[10] = 'test'
+console.log(myArr2);
+console.log(myArr2[2]);</p>
+
+
+
+<p>A5. 10: "test",<br>
+    length: 11<br>
+    [[Prototype]]
+    : 
+    Array(0)<br>
+    undefined </p>
+
+
+<p>6. What is the output in the console?
+const myArr3 = [3,6,8,9,3,55,553,434];
+myArr3.sort();
+myArr3.length = 0;
+console.log(myArr3[0]);</p>
+
+
+<p>A6. 
+    myArr3.sort(3,3,6,8,9,55,434,553);<br>
+    undefined</p>
+
+    <h1>Exercise ( 4.1-4.5)</h1>
+
+    <h1>Self-check quiz</h1>
+
+<p>Q1. What will be outputted to the console in this instance?
+    const q = '1';
+    switch (q) {
+    case '1':
+    answer = "one";
+    
+    Logic Statements
+    
+    [ 84 ]
+    
+    break;
+    case 1:
+    answer = 1;
+    break;
+    case 2:
+    answer = "this is the one";
+    break;
+    default:
+    answer = "not working";
+    }
+    console.log(answer);</p>
+    <h3>A1. one</h3>
+
+
+    <p>Q2.What will be outputted to the console in this instance?
+        const q = 1;
+        switch (q) {
+        case '1':
+        answer = "one";
+        case 1:
+        answer = 1;
+        case 2:
+        answer = "this is the one";
+        break;
+        default:
+        answer = "not working";
+        }
+        console.log(answer);</p>
+    <h3>A2. this is the one</h3>
+
+    <p>Q3. 3. What will be outputted to the console in this instance?
+        let login = false;
+        let outputHolder = "";
+        let userOkay = login ? outputHolder = "logout" : outputHolder =
+        "login";
+        console.log(userOkay);</p>
+    <h4>A3. login</h4>
+
+    <p>Q4. What will be outputted to the console in this instance?
+        const userNames = ["Mike", "John", "Larry"];
+        const userInput = "John";
+        let htmlOutput = "";
+        if (userNames.indexOf(userInput) > -1) {
+        htmlOutput = "Welcome, that is a user";
+        
+        } else {
+        htmlOutput = "Denied, not a user ";
+        }
+        console.log(htmlOutput + ": " + userInput);</p>
+    <h4>A4. Welcome, that is a user: John</h4>
+
+
+    <p>Q5.let myTime = 9;
+        let output;
+        if (myTime >= 8 && myTime < 12) {
+        output = "Wake up, it's morning";
+        } else if (myTime >= 12 && myTime < 13) {
+        output = "Go to lunch";
+        } else if (myTime >= 13 && myTime <= 16) {
+        output = "Go to work";
+        } else if (myTime > 16 && myTime < 20) {
+        output = "Dinner time";
+        } else if (myTime >= 22) {
+        output = "Time to go to sleep";
+        } else {
+        output = "You should be sleeping";
+        }
+        console.log(output);</p>
+
+    <h4>A5. Wake up, it's morning</h4>
+
+<p>Q6. let a = 5;
+    let b = 10;
+    let c = 20;
+    let d = 30;
+    console.log(a > b || b > a);
+    console.log(a > b && b > a);
+    console.log(d > b || b > a);
+    console.log(d > b && b > a);</p>
+
+    <h4>A6. true<br>
+        false<br>
+        true<br>
+        true<br>
+
+<p>Q7. let val = 100;
+    let message = (val > 100) ? `${val} was greater than 100` :
+    `${val} was LESS or Equal to 100`;
+    console.log(message);
+    let check = (val % 2) ? `Odd` : `Even`;
+    check = `${val} is ${check}`;
+    console.log(check);</p>
+        <h4>A7. 100 was LESS or Equal to 100<br>
+
+
+            100 is Even</h4>  
+
+
+     <script src="./exer3.js"></script>
+    <script src="./exer4.js"></script>
+
+
+</body>
+</html>
